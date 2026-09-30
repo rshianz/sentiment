@@ -5,21 +5,27 @@ predict.py is for when you have done training and 'best_model_state' file is ava
 
 
 
-Overall Accuracy: 0.8283
+````markdown
+# RoBERTa — Test Set Performance Report
 
-Classification Report:
-              precision    recall  f1-score   support
+**Overall Accuracy: 0.8283**
 
-negative (0)       0.81      0.69      0.75        81
- neutral (1)       0.60      0.75      0.67        63
-positive (2)       0.92      0.90      0.91       217
+## Classification Report
 
-  accuracy                           0.83       361
-   macro avg       0.78      0.78      0.77       361
-weighted avg       0.84      0.83      0.83       361
+| Class            | Precision | Recall | F1-Score | Support |
+|------------------|-----------|--------|----------|---------|
+| negative (0)     | 0.81      | 0.69   | 0.75     | 81      |
+| neutral (1)      | 0.60      | 0.75   | 0.67     | 63      |
+| positive (2)     | 0.92      | 0.90   | 0.91     | 217     |
+| **accuracy**     | —         | —      | **0.83** | 361     |
+| **macro avg**    | 0.78      | 0.78   | 0.77     | 361     |
+| **weighted avg** | 0.84      | 0.83   | 0.83     | 361     |
 
+## Confusion Matrix
 
-Confusion Matrix:
-[[ 56  15  10]
- [  8  47   8]
- [  5  16 196]]
+|                      | Pred: negative | Pred: neutral | Pred: positive |
+|----------------------|:--------------:|:-------------:|:--------------:|
+| **Actual: negative** | 56             | 15            | 10             |
+| **Actual: neutral**  | 8              | 47            | 8              |
+| **Actual: positive** | 5              | 16            | 196            |
+````
