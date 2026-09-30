@@ -1,6 +1,6 @@
 # sentiment (Aspect-Based Sentiment Analysis) 
 
-#explanations
+# explanations
 
 main.py is for plt show of data and train them (phase 1 & 2)
 
